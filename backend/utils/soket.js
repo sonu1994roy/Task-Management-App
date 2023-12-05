@@ -8,7 +8,7 @@ const User = require("../models/userModel");
 const socketIo = (http) => {
   const io = require('socket.io')(http, {
     cors: {
-      origin: '*', // Replace with your front-end URL
+      origin: 'http://localhost:3000', 
       methods: ['GET', 'POST'],
       credentials: true,
     },

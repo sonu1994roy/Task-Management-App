@@ -78,7 +78,7 @@ const Profile = () => {
                                                             <div className="row pt-1">
                                                                 <div className="col-6 mb-3">
                                                                     <h6>Viewed task</h6>
-                                                                    <p className="text-muted"><Link to={"/me/order"}>My Orders</Link></p>
+                                                                    <p className="text-muted"><Link to={"/me/order"}>Viewed task</Link></p>
 
                                                                 </div>
                                                                 <div className="col-6 mb-3">
