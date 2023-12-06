@@ -104,10 +104,6 @@ exports.getTeamsByUserId = catchAsyncErrors(async (req, res, next) => {
     .select('name  members')
     .populate('members', 'name avatar email');
 
-  if (!userTeams || userTeams.length === 0) {
-    return next(new ErrorHander('User not found in any team', 404));
-  }
-
   res.status(200).json({ success: true, data: userTeams });
 });
 
